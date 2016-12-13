@@ -1,0 +1,48 @@
+
+
+
+
+<% if @user_details.blank? %>
+<p>There are no users.</p>
+<% else %>
+<p>These are the current users in our system</p>
+
+<ul id = "user_details">
+   <% @user_details.each do |c| %>
+   <li><%= link_to c.name, {:action => 'show', :id => c.id} -%></li>
+   <% end %>
+</ul>
+
+<% end %>
+<p><%= link_to "Add new user", {:action => 'new' }%></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

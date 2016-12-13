@@ -1,0 +1,64 @@
+
+<h1>Add new user </h1>
+
+<%= form_tag :action => 'create' do %>
+<p><label for = "user_detail_name">name</label>:
+
+
+<%= text_field 'user_details', 'name' %></p>
+
+
+
+<p><label for = "user_detail_user_id">user address</label>:
+<%= collection_select(:user_details, :user_id, @users, :id, :name, prompt: true) %></p>
+
+<p><label for = "user_detail_age">age</label>:
+
+
+<%= text_field 'user_details', 'age' %></p>
+
+
+
+<p><label for = "user_detail_salary">salary</label>:
+
+
+<%= text_field 'user_details', 'salary' %></p>
+
+
+
+<p><label for = "user_detail_sex">sex</label>:
+
+
+<%= text_field 'user_details', 'sex' %></p>
+
+<p><label for = "user_detail_mobile_number">mobile number</label>:
+
+
+<%= text_field 'user_details', 'mobile_number' %></p>
+
+<%= submit_tag "Create" %>
+
+<% end -%>
+<%= link_to 'Back', {:action => 'index'} %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+
+
+
+
+
+
+
+attachments["test.pdf"] = File.read(Rails.root.join('public',"test.pdf"))
+mail(:to => to, :cc => cc , :subject => "subject")
